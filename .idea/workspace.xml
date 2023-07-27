@@ -5,12 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a389e292-1466-42f3-a96a-99496502439d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/stepDefinition/stepDefinition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObject/AccountPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/PageObject/LogInPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/LogIn.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/OrangeHRMTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LogInPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PageObject/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LogInPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/stepDefinition/stepDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stepDefinition/stepDefinition.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +39,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2T3vgILm4VQ6iT3hyMlvIFQYBis" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -58,8 +59,8 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.LogInPage">
-    <configuration name="LogInPage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Feature: LogIn">
+    <configuration name="LogInPage" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.LogInPage" />
       <module name="testFramework" />
       <extension name="coverage">
@@ -79,9 +80,70 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Feature: LogIn" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/LogIn.feature" />
+      <option name="GLUE" value="stepDefinition" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="testFramework" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: LogIn" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: As a user of Fake Online Clothing Store I should to be able to login into my account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/LogIn.feature" />
+      <option name="GLUE" value="stepDefinition" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="testFramework" />
+      <option name="NAME_FILTER" value="^As a user of Fake Online Clothing Store I should to be able to login into my account$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user of Fake Online Clothing Store I should to be able to login into my account$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: As a user of Fake Online Clothing Store I should to be able to login into my account" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: As an invalid user of the site" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/LogIn.feature" />
+      <option name="GLUE" value="stepDefinition" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="testFramework" />
+      <option name="NAME_FILTER" value="^As an invalid user of the site$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As an invalid user of the site$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: As an invalid user of the site" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LogInPage" />
+        <item itemvalue="Cucumber Java.Feature: LogIn" />
+        <item itemvalue="Cucumber Java.Scenario: As an invalid user of the site" />
+        <item itemvalue="Cucumber Java.Scenario: As a user of Fake Online Clothing Store I should to be able to login into my account" />
         <item itemvalue="Application.OrangeHRMTest" />
       </list>
     </recent_temporary>
@@ -95,6 +157,39 @@
       <option name="presentableId" value="Default" />
       <updated>1690284691020</updated>
     </task>
+    <task id="LOCAL-00001" summary="wip">
+      <created>1690359050111</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690359050111</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="wip" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/PageObject/LogInPage.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/PageObject/LogInPage.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/stepDefinition/stepDefinition.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

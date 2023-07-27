@@ -1,4 +1,4 @@
-package example;
+package PageObject;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
