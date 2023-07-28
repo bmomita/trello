@@ -1,5 +1,6 @@
 package PageObject;
 
+import Interfaces.AccountPageSelectors;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,7 +18,7 @@ public class AccountPage extends Base {
         PageFactory.initElements(driver,this);
     }
 
-    @FindBy(xpath = "//p[@class='oxd-userdropdown-name']")
+    @FindBy(xpath = AccountPageSelectors.ACCOUNTNAME)
     WebElement accountName;
 
     public void checkName() {

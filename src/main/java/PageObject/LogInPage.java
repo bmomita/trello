@@ -1,5 +1,7 @@
 package PageObject;
 
+import Inputs.UrlConstants;
+import Interfaces.LogInPageSelectors;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,16 +18,16 @@ public class LogInPage extends Base {
         PageFactory.initElements(driver,this);
     }
 
-    @FindBy(css = "input[placeholder='Username']")
+    @FindBy(css = LogInPageSelectors.USERNAME)
     WebElement userName;
 
-    @FindBy(css = "input[placeholder='Password']")
+    @FindBy(css = LogInPageSelectors.PASSWORD)
     WebElement passwordElement;
 
-    @FindBy(css = "button[type='submit']")
+    @FindBy(css = LogInPageSelectors.LOGINSUBMIT)
     WebElement loginButton;
 
-    @FindBy(xpath = "//div[@role='alert']")
+    @FindBy(xpath = LogInPageSelectors.INVALIDCREDENTIALS)
     WebElement invalidCredentials;
 
     public void logInApplication(String userid, String pass) {
@@ -34,7 +36,7 @@ public class LogInPage extends Base {
         loginButton.click();
     }
     public void goTo() {
-        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        driver.get(UrlConstants.BASE_URL.getUrl());
     }
 
     public void verifyInvalidCredentials() {
